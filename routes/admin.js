@@ -10,4 +10,8 @@ router.get('/logout', function(req, res, next) {
 	res.redirect('/');
 })
 
+router.get('/pages', function(req, res, next) {
+	res.render('pages');
+});
+
 module.exports = router;
