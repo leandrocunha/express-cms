@@ -1,0 +1,426 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express-generator',
+1 verbose cli   '-g',
+1 verbose cli   '--hbs',
+1 verbose cli   '--css',
+1 verbose cli   'stylus' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'express-generator', null ]
+5 verbose cache add name=undefined spec="express-generator" args=["express-generator",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'express-generator',
+6 verbose parsed url   path: 'express-generator',
+6 verbose parsed url   href: 'express-generator' }
+7 verbose cache add [ 'stylus', null ]
+8 verbose cache add name=undefined spec="stylus" args=["stylus",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'stylus',
+9 verbose parsed url   path: 'stylus',
+9 verbose parsed url   href: 'stylus' }
+10 silly lockFile 198a68d8-express-generator express-generator
+11 verbose lock express-generator /Users/6d/.npm/198a68d8-express-generator.lock
+12 silly lockFile 27c0f414-stylus stylus
+13 verbose lock stylus /Users/6d/.npm/27c0f414-stylus.lock
+14 silly lockFile 198a68d8-express-generator express-generator
+15 silly lockFile 198a68d8-express-generator express-generator
+16 silly lockFile 27c0f414-stylus stylus
+17 silly lockFile 27c0f414-stylus stylus
+18 verbose addNamed [ 'express-generator', '' ]
+19 verbose addNamed [ null, '*' ]
+20 silly lockFile bd41e3d3-express-generator express-generator@
+21 verbose lock express-generator@ /Users/6d/.npm/bd41e3d3-express-generator.lock
+22 verbose addNamed [ 'stylus', '' ]
+23 verbose addNamed [ null, '*' ]
+24 silly lockFile 5140332e-stylus stylus@
+25 verbose lock stylus@ /Users/6d/.npm/5140332e-stylus.lock
+26 silly addNameRange { name: 'express-generator', range: '*', hasData: false }
+27 silly addNameRange { name: 'stylus', range: '*', hasData: false }
+28 verbose request where is /stylus
+29 verbose request registry https://registry.npmjs.org/
+30 verbose request id ece753e5ea362bc5
+31 verbose url raw /stylus
+32 verbose url resolving [ 'https://registry.npmjs.org/', './stylus' ]
+33 verbose url resolved https://registry.npmjs.org/stylus
+34 verbose request where is https://registry.npmjs.org/stylus
+35 info trying registry request attempt 1 at 17:50:42
+36 http GET https://registry.npmjs.org/stylus
+37 verbose request where is /express-generator
+38 verbose request registry https://registry.npmjs.org/
+39 verbose url raw /express-generator
+40 verbose url resolving [ 'https://registry.npmjs.org/', './express-generator' ]
+41 verbose url resolved https://registry.npmjs.org/express-generator
+42 verbose request where is https://registry.npmjs.org/express-generator
+43 info trying registry request attempt 1 at 17:50:42
+44 verbose etag "9D6BS8QBVECR4UVT0E5JELT7A"
+45 http GET https://registry.npmjs.org/express-generator
+46 http 304 https://registry.npmjs.org/express-generator
+47 silly registry.get cb [ 304,
+47 silly registry.get   { date: 'Mon, 19 Jan 2015 19:50:42 GMT',
+47 silly registry.get     server: 'Apache',
+47 silly registry.get     via: '1.1 varnish',
+47 silly registry.get     'last-modified': 'Mon, 19 Jan 2015 19:50:42 GMT',
+47 silly registry.get     'cache-control': 'max-age=60',
+47 silly registry.get     etag: '"9D6BS8QBVECR4UVT0E5JELT7A"',
+47 silly registry.get     age: '4',
+47 silly registry.get     'x-served-by': 'cache-iad2128-IAD',
+47 silly registry.get     'x-cache': 'HIT',
+47 silly registry.get     'x-cache-hits': '1',
+47 silly registry.get     'x-timer': 'S1421697042.737890,VS0,VE0',
+47 silly registry.get     vary: 'Accept',
+47 silly registry.get     'content-length': '0',
+47 silly registry.get     'keep-alive': 'timeout=10, max=50',
+47 silly registry.get     connection: 'Keep-Alive' } ]
+48 verbose etag https://registry.npmjs.org/express-generator from cache
+49 silly addNameRange number 2 { name: 'express-generator', range: '*', hasData: true }
+50 silly addNameRange versions [ 'express-generator',
+50 silly addNameRange   [ '1.0.0',
+50 silly addNameRange     '3.0.0',
+50 silly addNameRange     '4.0.0',
+50 silly addNameRange     '4.2.0',
+50 silly addNameRange     '4.8.0',
+50 silly addNameRange     '4.9.0',
+50 silly addNameRange     '4.10.0',
+50 silly addNameRange     '4.11.0' ] ]
+51 verbose addNamed [ 'express-generator', '4.11.0' ]
+52 verbose addNamed [ '4.11.0', '4.11.0' ]
+53 silly lockFile cb860965-express-generator-4-11-0 express-generator@4.11.0
+54 verbose lock express-generator@4.11.0 /Users/6d/.npm/cb860965-express-generator-4-11-0.lock
+55 silly lockFile cb860965-express-generator-4-11-0 express-generator@4.11.0
+56 silly lockFile cb860965-express-generator-4-11-0 express-generator@4.11.0
+57 silly lockFile bd41e3d3-express-generator express-generator@
+58 silly lockFile bd41e3d3-express-generator express-generator@
+59 http 200 https://registry.npmjs.org/stylus
+60 silly registry.get cb [ 200,
+60 silly registry.get   { date: 'Mon, 19 Jan 2015 19:50:43 GMT',
+60 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+60 silly registry.get     etag: '"727K5KKVYQVRPEB4FVK6NEXEZ"',
+60 silly registry.get     'content-type': 'application/json',
+60 silly registry.get     'cache-control': 'max-age=60',
+60 silly registry.get     'content-length': '177278',
+60 silly registry.get     'accept-ranges': 'bytes',
+60 silly registry.get     via: '1.1 varnish',
+60 silly registry.get     age: '0',
+60 silly registry.get     'x-served-by': 'cache-iad2136-IAD',
+60 silly registry.get     'x-cache': 'HIT',
+60 silly registry.get     'x-cache-hits': '1',
+60 silly registry.get     'x-timer': 'S1421697043.780158,VS0,VE59',
+60 silly registry.get     vary: 'Accept',
+60 silly registry.get     'keep-alive': 'timeout=10, max=50',
+60 silly registry.get     connection: 'Keep-Alive' } ]
+61 silly addNameRange number 2 { name: 'stylus', range: '*', hasData: true }
+62 silly addNameRange versions [ 'stylus',
+62 silly addNameRange   [ '0.0.1',
+62 silly addNameRange     '0.0.2',
+62 silly addNameRange     '0.1.0',
+62 silly addNameRange     '0.2.0',
+62 silly addNameRange     '0.2.1',
+62 silly addNameRange     '0.3.0',
+62 silly addNameRange     '0.3.1',
+62 silly addNameRange     '0.4.0',
+62 silly addNameRange     '0.4.1',
+62 silly addNameRange     '0.5.0',
+62 silly addNameRange     '0.5.1',
+62 silly addNameRange     '0.5.2',
+62 silly addNameRange     '0.5.3',
+62 silly addNameRange     '0.6.0',
+62 silly addNameRange     '0.6.2',
+62 silly addNameRange     '0.6.3',
+62 silly addNameRange     '0.6.4',
+62 silly addNameRange     '0.6.5',
+62 silly addNameRange     '0.6.6',
+62 silly addNameRange     '0.6.7',
+62 silly addNameRange     '0.7.0',
+62 silly addNameRange     '0.7.1',
+62 silly addNameRange     '0.7.2',
+62 silly addNameRange     '0.7.3',
+62 silly addNameRange     '0.7.4',
+62 silly addNameRange     '0.8.0',
+62 silly addNameRange     '0.9.0',
+62 silly addNameRange     '0.9.1',
+62 silly addNameRange     '0.9.2',
+62 silly addNameRange     '0.10.0',
+62 silly addNameRange     '0.11.0',
+62 silly addNameRange     '0.11.1',
+62 silly addNameRange     '0.11.2',
+62 silly addNameRange     '0.11.3',
+62 silly addNameRange     '0.11.4',
+62 silly addNameRange     '0.11.5',
+62 silly addNameRange     '0.11.6',
+62 silly addNameRange     '0.11.7',
+62 silly addNameRange     '0.11.8',
+62 silly addNameRange     '0.11.9',
+62 silly addNameRange     '0.11.10',
+62 silly addNameRange     '0.11.11',
+62 silly addNameRange     '0.11.12',
+62 silly addNameRange     '0.12.0',
+62 silly addNameRange     '0.12.1',
+62 silly addNameRange     '0.12.2',
+62 silly addNameRange     '0.12.3',
+62 silly addNameRange     '0.12.4',
+62 silly addNameRange     '0.13.0',
+62 silly addNameRange     '0.13.1',
+62 silly addNameRange     '0.13.2',
+62 silly addNameRange     '0.13.3',
+62 silly addNameRange     '0.13.4',
+62 silly addNameRange     '0.13.5',
+62 silly addNameRange     '0.13.6',
+62 silly addNameRange     '0.13.7',
+62 silly addNameRange     '0.13.8',
+62 silly addNameRange     '0.13.9',
+62 silly addNameRange     '0.14.0',
+62 silly addNameRange     '0.15.0',
+62 silly addNameRange     '0.15.1',
+62 silly addNameRange     '0.15.2',
+62 silly addNameRange     '0.15.3',
+62 silly addNameRange     '0.15.4',
+62 silly addNameRange     '0.16.0',
+62 silly addNameRange     '0.17.0',
+62 silly addNameRange     '0.18.0',
+62 silly addNameRange     '0.19.0',
+62 silly addNameRange     '0.19.1',
+62 silly addNameRange     '0.19.2',
+62 silly addNameRange     '0.19.3',
+62 silly addNameRange     '0.19.4',
+62 silly addNameRange     '0.19.5',
+62 silly addNameRange     '0.19.6',
+62 silly addNameRange     '0.19.7',
+62 silly addNameRange     '0.19.8',
+62 silly addNameRange     '0.20.0',
+62 silly addNameRange     '0.20.1',
+62 silly addNameRange     '0.21.0',
+62 silly addNameRange     '0.21.1',
+62 silly addNameRange     '0.21.2',
+62 silly addNameRange     '0.22.0',
+62 silly addNameRange     '0.22.1',
+62 silly addNameRange     '0.22.2',
+62 silly addNameRange     '0.22.3',
+62 silly addNameRange     '0.22.4',
+62 silly addNameRange     '0.22.5',
+62 silly addNameRange     '0.22.6',
+62 silly addNameRange     '0.23.0',
+62 silly addNameRange     '0.24.0',
+62 silly addNameRange     '0.25.0',
+62 silly addNameRange     '0.26.0',
+62 silly addNameRange     '0.26.1',
+62 silly addNameRange     '0.27.0',
+62 silly addNameRange     '0.27.1',
+62 silly addNameRange     '0.27.2',
+62 silly addNameRange     '0.28.0',
+62 silly addNameRange     '0.28.1',
+62 silly addNameRange     '0.28.2',
+62 silly addNameRange     '0.29.0',
+62 silly addNameRange     '0.30.0',
+62 silly addNameRange     '0.30.1',
+62 silly addNameRange     '0.31.0',
+62 silly addNameRange     '0.32.0',
+62 silly addNameRange     '0.32.1',
+62 silly addNameRange     '0.33.0',
+62 silly addNameRange     '0.33.1',
+62 silly addNameRange     '0.34.0',
+62 silly addNameRange     '0.34.1',
+62 silly addNameRange     '0.35.0',
+62 silly addNameRange     '0.35.1',
+62 silly addNameRange     '0.36.0',
+62 silly addNameRange     '0.36.1',
+62 silly addNameRange     '0.37.0',
+62 silly addNameRange     '0.38.0',
+62 silly addNameRange     '0.39.0',
+62 silly addNameRange     '0.39.1',
+62 silly addNameRange     '0.39.2',
+62 silly addNameRange     '0.39.3',
+62 silly addNameRange     '0.39.4',
+62 silly addNameRange     '0.40.0',
+62 silly addNameRange     '0.40.1',
+62 silly addNameRange     '0.40.2',
+62 silly addNameRange     '0.40.3',
+62 silly addNameRange     '0.41.0',
+62 silly addNameRange     '0.41.1',
+62 silly addNameRange     '0.41.2',
+62 silly addNameRange     '0.41.3',
+62 silly addNameRange     '0.42.0',
+62 silly addNameRange     '0.42.1',
+62 silly addNameRange     '0.42.2',
+62 silly addNameRange     '0.42.3',
+62 silly addNameRange     '0.43.0',
+62 silly addNameRange     '0.44.0-beta',
+62 silly addNameRange     '0.43.1',
+62 silly addNameRange     '0.44.0-beta2',
+62 silly addNameRange     '0.44.0-beta3',
+62 silly addNameRange     '0.44.0',
+62 silly addNameRange     '0.45.0',
+62 silly addNameRange     '0.45.1',
+62 silly addNameRange     '0.46.0',
+62 silly addNameRange     '0.46.1',
+62 silly addNameRange     '0.46.2',
+62 silly addNameRange     '0.46.3',
+62 silly addNameRange     '0.47.0',
+62 silly addNameRange     '0.47.1',
+62 silly addNameRange     '0.47.2',
+62 silly addNameRange     '0.47.3',
+62 silly addNameRange     '0.48.0',
+62 silly addNameRange     '0.48.1',
+62 silly addNameRange     '0.49.0',
+62 silly addNameRange     '0.49.1',
+62 silly addNameRange     '0.49.2',
+62 silly addNameRange     '0.49.3' ] ]
+63 verbose addNamed [ 'stylus', '0.49.3' ]
+64 verbose addNamed [ '0.49.3', '0.49.3' ]
+65 silly lockFile 8c45e69b-stylus-0-49-3 stylus@0.49.3
+66 verbose lock stylus@0.49.3 /Users/6d/.npm/8c45e69b-stylus-0-49-3.lock
+67 silly lockFile f778de1e-mjs-org-stylus-stylus-0-49-3-tgz https://registry.npmjs.org/stylus/-/stylus-0.49.3.tgz
+68 verbose lock https://registry.npmjs.org/stylus/-/stylus-0.49.3.tgz /Users/6d/.npm/f778de1e-mjs-org-stylus-stylus-0-49-3-tgz.lock
+69 verbose addRemoteTarball [ 'https://registry.npmjs.org/stylus/-/stylus-0.49.3.tgz',
+69 verbose addRemoteTarball   '1fbdabe479ed460872c71a6252a67f95040ba511' ]
+70 info retry fetch attempt 1 at 17:50:45
+71 verbose fetch to= /var/folders/37/npq47_6s58jd8h3rj40m9zg40000gn/T/npm-9723-Huept17R/registry.npmjs.org/stylus/-/stylus-0.49.3.tgz
+72 http GET https://registry.npmjs.org/stylus/-/stylus-0.49.3.tgz
+73 http 200 https://registry.npmjs.org/stylus/-/stylus-0.49.3.tgz
+74 silly lockFile f778de1e-mjs-org-stylus-stylus-0-49-3-tgz https://registry.npmjs.org/stylus/-/stylus-0.49.3.tgz
+75 silly lockFile f778de1e-mjs-org-stylus-stylus-0-49-3-tgz https://registry.npmjs.org/stylus/-/stylus-0.49.3.tgz
+76 silly lockFile 8c45e69b-stylus-0-49-3 stylus@0.49.3
+77 silly lockFile 8c45e69b-stylus-0-49-3 stylus@0.49.3
+78 silly lockFile 5140332e-stylus stylus@
+79 silly lockFile 5140332e-stylus stylus@
+80 silly resolved [ { name: 'express-generator',
+80 silly resolved     description: 'Express\' application generator',
+80 silly resolved     version: '4.11.0',
+80 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+80 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+80 silly resolved     keywords:
+80 silly resolved      [ 'express',
+80 silly resolved        'framework',
+80 silly resolved        'sinatra',
+80 silly resolved        'web',
+80 silly resolved        'rest',
+80 silly resolved        'restful',
+80 silly resolved        'router',
+80 silly resolved        'app',
+80 silly resolved        'api' ],
+80 silly resolved     repository: { type: 'git', url: 'https://github.com/expressjs/generator' },
+80 silly resolved     license: 'MIT',
+80 silly resolved     dependencies: { commander: '2.6.0', mkdirp: '0.5.0', 'sorted-object': '1.0.0' },
+80 silly resolved     main: 'bin/express',
+80 silly resolved     preferGlobal: true,
+80 silly resolved     bin: { express: './bin/express' },
+80 silly resolved     devDependencies:
+80 silly resolved      { after: '0.8.1',
+80 silly resolved        mocha: '~2.1.0',
+80 silly resolved        rimraf: '~2.2.8',
+80 silly resolved        supertest: '~0.15.0' },
+80 silly resolved     engines: { node: '>= 0.10' },
+80 silly resolved     files: [ 'LICENSE', 'bin/', 'templates/' ],
+80 silly resolved     scripts:
+80 silly resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+80 silly resolved        'test-travis': 'mocha --reporter spec --bail --check-leaks test/' },
+80 silly resolved     gitHead: '4feb90616c905e49647ab50e96da891ba1216563',
+80 silly resolved     bugs: { url: 'https://github.com/expressjs/generator/issues' },
+80 silly resolved     homepage: 'https://github.com/expressjs/generator',
+80 silly resolved     _id: 'express-generator@4.11.0',
+80 silly resolved     _shasum: 'fc31c5799244484785f25f59ec6fdb42614d4863',
+80 silly resolved     _from: 'express-generator@',
+80 silly resolved     _npmVersion: '1.4.28',
+80 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+80 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+80 silly resolved     dist:
+80 silly resolved      { shasum: 'fc31c5799244484785f25f59ec6fdb42614d4863',
+80 silly resolved        tarball: 'http://registry.npmjs.org/express-generator/-/express-generator-4.11.0.tgz' },
+80 silly resolved     directories: {},
+80 silly resolved     _resolved: 'https://registry.npmjs.org/express-generator/-/express-generator-4.11.0.tgz',
+80 silly resolved     readme: 'ERROR: No README data found!' },
+80 silly resolved   { name: 'stylus',
+80 silly resolved     description: 'Robust, expressive, and feature-rich CSS superset',
+80 silly resolved     version: '0.49.3',
+80 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+80 silly resolved     keywords: [ 'css', 'parser', 'style', 'stylesheets', 'jade', 'language' ],
+80 silly resolved     repository: { type: 'git', url: 'git://github.com/LearnBoost/stylus' },
+80 silly resolved     main: './index.js',
+80 silly resolved     browserify: './lib/browserify.js',
+80 silly resolved     engines: { node: '*' },
+80 silly resolved     bin: { stylus: './bin/stylus' },
+80 silly resolved     scripts:
+80 silly resolved      { prepublish: 'npm prune',
+80 silly resolved        test: 'mocha test/ test/middleware/ --require should --bail --reporter dot',
+80 silly resolved        'test-cov': 'mocha test/ test/middleware/ --require should --bail --reporter html-cov > coverage.html' },
+80 silly resolved     dependencies:
+80 silly resolved      { 'css-parse': '1.7.x',
+80 silly resolved        mkdirp: '0.3.x',
+80 silly resolved        debug: '*',
+80 silly resolved        sax: '0.5.x',
+80 silly resolved        glob: '3.2.x',
+80 silly resolved        'source-map': '0.1.x' },
+80 silly resolved     devDependencies: { should: '2.x', mocha: '*', jscoverage: '0.3.8' },
+80 silly resolved     bugs: { url: 'https://github.com/LearnBoost/stylus/issues' },
+80 silly resolved     homepage: 'https://github.com/LearnBoost/stylus',
+80 silly resolved     directories: { doc: 'docs', example: 'examples', test: 'test' },
+80 silly resolved     license: 'MIT',
+80 silly resolved     _id: 'stylus@0.49.3',
+80 silly resolved     _shasum: '1fbdabe479ed460872c71a6252a67f95040ba511',
+80 silly resolved     _from: 'stylus@',
+80 silly resolved     _npmVersion: '1.4.9',
+80 silly resolved     _npmUser: { name: 'kizu', email: 'kizmarh@ya.ru' },
+80 silly resolved     maintainers: [ [Object], [Object] ],
+80 silly resolved     dist:
+80 silly resolved      { shasum: '1fbdabe479ed460872c71a6252a67f95040ba511',
+80 silly resolved        tarball: 'http://registry.npmjs.org/stylus/-/stylus-0.49.3.tgz' },
+80 silly resolved     _resolved: 'https://registry.npmjs.org/stylus/-/stylus-0.49.3.tgz' } ]
+81 info install express-generator@4.11.0 into /usr/local/lib
+82 info install stylus@0.49.3 into /usr/local/lib
+83 info installOne express-generator@4.11.0
+84 info installOne stylus@0.49.3
+85 verbose lib/node_modules/express-generator unbuild
+86 verbose lib/node_modules/stylus unbuild
+87 verbose tar unpack /Users/6d/.npm/stylus/0.49.3/package.tgz
+88 silly lockFile 4aac4a2d-sr-local-lib-node-modules-stylus tar:///usr/local/lib/node_modules/stylus
+89 verbose lock tar:///usr/local/lib/node_modules/stylus /Users/6d/.npm/4aac4a2d-sr-local-lib-node-modules-stylus.lock
+90 silly lockFile caf72cfb-6d-npm-stylus-0-49-3-package-tgz tar:///Users/6d/.npm/stylus/0.49.3/package.tgz
+91 verbose lock tar:///Users/6d/.npm/stylus/0.49.3/package.tgz /Users/6d/.npm/caf72cfb-6d-npm-stylus-0-49-3-package-tgz.lock
+92 silly gunzTarPerm modes [ '755', '644' ]
+93 error Error: EACCES, mkdir '/usr/local/lib/node_modules/stylus'
+93 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/stylus']
+93 error   errno: 3,
+93 error   code: 'EACCES',
+93 error   path: '/usr/local/lib/node_modules/stylus',
+93 error   fstream_type: 'Directory',
+93 error   fstream_path: '/usr/local/lib/node_modules/stylus',
+93 error   fstream_class: 'DirWriter',
+93 error   fstream_stack:
+93 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+93 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+93 error      'Object.oncomplete (fs.js:107:15)' ] }
+94 error Please try running this command again as root/Administrator.
+95 error System Darwin 14.0.0
+96 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "express-generator" "-g" "--hbs" "--css" "stylus"
+97 error cwd /Users/6d/Documents/Frango/express-cms
+98 error node -v v0.10.33
+99 error npm -v 1.4.28
+100 error path /usr/local/lib/node_modules/stylus
+101 error fstream_path /usr/local/lib/node_modules/stylus
+102 error fstream_type Directory
+103 error fstream_class DirWriter
+104 error code EACCES
+105 error errno 3
+106 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/stylus'
+107 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+107 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+107 error fstream_stack Object.oncomplete (fs.js:107:15)
+108 verbose exit [ 3, true ]
