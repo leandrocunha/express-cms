@@ -10,7 +10,7 @@
 	<section>
 		<h2>Users</h2>
 		<p>Create a new user.</p>
-		<form action="users_submit" method="get" accept-charset="utf-8">
+		<form action="/admin/user" method="post" accept-charset="utf-8">
 			<label for="name">Name:</label>
 			<input id="name" name="name" type="text">
 			
@@ -19,5 +19,27 @@
 
 			<button type="submit">Create</button>
 		</form>
-	</section>	
+	</section>
+
+	<section>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th></th>
+				</tr>
+  			{{#each users}}
+  				<tr>
+  					<td>{{name}}</td>
+  					<td>{{email}}</td>
+  					<td>
+  						<form action="/admin/user/{{_id}}?_method=DELETE" method="post" accept-charset="utf-8">
+							<button type="submit">delete</button>
+  						</form>
+  					</td>
+  				</tr>
+  			{{/each}}
+		</ul>
+	</section>
 </section>

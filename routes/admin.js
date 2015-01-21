@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var mongoose = require('mongoose');
+var User = require('../models/User.js');
 
 /* GET admin listing. */
 router.get('/', function(req, res, next) {
@@ -19,7 +21,61 @@ router.get('/posts', function(req, res, next) {
 });
 
 router.get('/users', function(req, res, next) {
-	res.render('users');
+
+	User.find(function (err, users) {
+		if(err){
+			res.send(err);
+		}else{
+			res.render('users', {users: users });
+		}
+	});	
+});
+
+router.post('/user', function(req, res, next) {
+
+	var data = req.body,
+		user;
+
+	if( data.email !== '' && data.name !== '' ){
+
+		user = new User({
+	    	name: data.name,
+	    	email: data.email,
+	  	});
+
+  		user.save(function (err) {
+    		if (!err) {
+      			return console.log("created");
+    		} else {
+      			return console.log(err);
+    		}
+  		});
+
+		res.redirect('users');
+
+	}else{
+		res.send('Fields are required!')
+	}
+
+});
+
+router.delete('/user/:id', function (req, res) {
+
+	User.findById(req.params.id, function (err, user) {
+		if(err){
+			return console.log(err);
+		}else{
+			user.remove(function (err) {
+				if(err){
+					return console.log(err);
+				} else {
+					console.log("removed");
+					res.redirect('users'); 
+				}
+			});
+		}
+  	});
+
 });
 
 module.exports = router;
