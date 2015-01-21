@@ -18,4 +18,8 @@ router.get('/posts', function(req, res, next) {
 	res.render('posts');
 });
 
+router.get('/users', function(req, res, next) {
+	res.render('users');
+});
+
 module.exports = router;
