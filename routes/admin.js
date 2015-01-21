@@ -14,4 +14,8 @@ router.get('/pages', function(req, res, next) {
 	res.render('pages');
 });
 
+router.get('/posts', function(req, res, next) {
+	res.render('posts');
+});
+
 module.exports = router;
