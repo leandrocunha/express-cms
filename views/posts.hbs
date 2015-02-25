@@ -10,7 +10,7 @@
 	<section>
 		<h2>Posts</h2>
 		<p>Create a new post.</p>
-		<form action="posts_submit" method="get" accept-charset="utf-8">
+		<form action="/admin/posts" method="post" accept-charset="utf-8">
 			<label for="title">Title:</label>
 			<input id="title" name="title" type="text">
 			
@@ -18,5 +18,26 @@
 
 			<button type="submit">Create</button>
 		</form>
-	</section>	
+	</section>
+
+	<section>
+		<table>
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th></th>
+				</tr>
+  			{{#each posts}}
+  				<tr>
+  					<td>{{title}}</td>
+  					<td>
+  						<form action="/admin/post/{{_id}}?_method=DELETE" method="post" accept-charset="utf-8">
+							<button type="submit">delete</button>
+  						</form>
+  					</td>
+  				</tr>
+  			{{/each}}
+		</ul>
+	</section>
+
 </section>

@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var User = require('../models/User.js');
+var Post = require('../models/Post.js');
 
 /* GET admin listing. */
 router.get('/', function(req, res, next) {
@@ -17,7 +18,44 @@ router.get('/pages', function(req, res, next) {
 });
 
 router.get('/posts', function(req, res, next) {
-	res.render('posts');
+
+	Post.find(function (err, posts) {
+		if(err){
+			res.send(err);
+		}else{
+			res.render('posts', {posts: posts });
+		}
+	});	
+	
+});
+
+router.post('/post', function(req, res, next){
+
+	var data = req.body,
+		post;
+
+	if( data.title !== '' && data.post !== '' ){
+
+		post = new Post({
+			title: data.title,
+			post: data.post,
+			type: 'post'
+		});
+
+		post.save(function (err) {
+			if (!err) {
+				return console.log("created");
+			} else {
+				return console.log(err);
+			}			
+		});
+
+		res.redirect('posts');
+
+	}else{
+		res.send('Fields are required!')
+	}
+
 });
 
 router.get('/users', function(req, res, next) {
@@ -39,22 +77,22 @@ router.post('/user', function(req, res, next) {
 	if( data.email !== '' && data.name !== '' ){
 
 		user = new User({
-	    	name: data.name,
-	    	email: data.email,
-	  	});
+			name: data.name,
+			email: data.email,
+		});
 
-  		user.save(function (err) {
-    		if (!err) {
-      			return console.log("created");
-    		} else {
-      			return console.log(err);
-    		}
-  		});
+		user.save(function (err) {
+			if (!err) {
+				return console.log("created");
+			} else {
+				return console.log(err);
+			}
+		});
 
 		res.redirect('users');
 
 	}else{
-		res.send('Fields are required!')
+		res.send('Fields are required!');
 	}
 
 });
@@ -74,7 +112,7 @@ router.delete('/user/:id', function (req, res) {
 				}
 			});
 		}
-  	});
+	});
 
 });
 
