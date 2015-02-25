@@ -6,7 +6,7 @@
 	</nav>
 </header><!-- /header -->
 	
-<h1>{{title}}</h1>
+<p class="title">{{title}}</p>
 <p>Welcome to {{title}}</p>
 
 <ul class="pages">
@@ -16,9 +16,7 @@
 </ul>
 
 
-{{#each posts}}
-	<div class="post-wrapper">
-		<h2>{{title}}</h2>
-		<p>{{post}}</p>
-	</div>
+{{#each page}}
+	<h1>{{title}}</h1>
+	<p>{{body}}</p>
 {{/each}}

@@ -31,12 +31,15 @@ router.post('/pages', function(req, res, next){
 	var data = req.body,
 		post;
 
-	if( data.name !== '' ){
+	if( data.name !== '' && data.body !== '' ){
 
 		post = new Post({
 			title: data.name,
+			body: data.body,
 			type: 'page'
 		});
+
+		console.log( post );
 
 		post.save(function (err) {
 			if (!err) {

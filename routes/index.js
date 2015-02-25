@@ -14,11 +14,29 @@ router.get('/', function(req, res, next) {
 				if(err){
 					res.send(err);
 				}else{
-					res.render('index', {title: 'Express CMS', pages: pages, posts: posts });
+					res.render('index', {title: 'Express CMS', pages: pages, posts: posts});
 				}
 			});
 
 		}
+	});
+
+});
+
+
+// GET Post
+router.get('/post/:id', function(req, res, next) {
+
+	var id = req.params.id;
+
+	Post.findOne({ _id: id }, function (err, post) {
+
+		if(err){
+			res.send(err);
+		}else{
+			res.render('post', {title: 'Express CMS', page: post});
+		}
+
 	});
 
 });

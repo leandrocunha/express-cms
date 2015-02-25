@@ -11,9 +11,11 @@
 		<h2>Pages</h2>
 		<p>Create a new page.</p>
 		<form action="/admin/pages" method="post" accept-charset="utf-8">
-			<label>
-				<input type="text" name="name">
-			</label>
+			<label for="Name">Name:</label>
+			<input id="name" name="name" type="text">
+
+			<textarea name="body"></textarea>
+
 			<button type="submit">Create</button>
 		</form>
 	</section>
