@@ -25,9 +25,18 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 
 // mongoose setup
-mongoose.connect('mongodb://localhost/expresscms', function(err) {
-   (err) ?  console.log('database connection error', err) : console.log('database connection successful');
+app.configure('development', function() {
+    mongoose.connect('mongodb://localhost/expresscms', function(err) {
+       (err) ?  console.log('database connection error', err) : console.log('database connection successful');
+    });
 });
+
+app.configure('production', function() {
+    mongoose.connect('mongodb://' + process.env.MONGOLAB_URI + '/expresscms', function(err) {
+       (err) ?  console.log('database connection error', err) : console.log('database connection successful');
+    });
+});
+
 
 // method-override setup
 app.use(methodOverride('_method'));
