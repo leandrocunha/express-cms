@@ -1,8 +1,9 @@
-var express = require('express');
-var router = express.Router();
-var mongoose = require('mongoose');
-var User = require('../models/User.js');
-var Post = require('../models/Post.js');
+var express = require('express'),
+	router = express.Router(),
+	mongoose = require('mongoose'),
+	User = require('../models/User.js'),
+	Post = require('../models/Post.js');
+
 
 /* GET admin listing. */
 router.get('/', function(req, res, next) {
@@ -14,7 +15,43 @@ router.get('/logout', function(req, res, next) {
 })
 
 router.get('/pages', function(req, res, next) {
-	res.render('pages');
+
+	Post.find({ type: 'page' }, function (err, posts) {
+		if(err){
+			res.send(err);
+		}else{
+			res.render('pages', {pages: posts });
+		}
+	});
+
+});
+
+router.post('/pages', function(req, res, next){
+
+	var data = req.body,
+		post;
+
+	if( data.name !== '' ){
+
+		post = new Post({
+			title: data.name,
+			type: 'page'
+		});
+
+		post.save(function (err) {
+			if (!err) {
+				return console.log("created");
+			} else {
+				return console.log(err);
+			}			
+		});
+
+		res.redirect('pages');
+
+	}else{
+		res.send('Fields are required!')
+	}
+
 });
 
 router.get('/posts', function(req, res, next) {
@@ -25,7 +62,7 @@ router.get('/posts', function(req, res, next) {
 		}else{
 			res.render('posts', {posts: posts });
 		}
-	});	
+	});
 	
 });
 

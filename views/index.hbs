@@ -8,3 +8,17 @@
 	
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+
+<ul class="pages">
+	{{#each pages}}
+		<li><a href="#">{{title}}</a></li>		
+	{{/each}}
+</ul>
+
+
+{{#each posts}}
+	<div class="post-wrapper">
+		<h2>{{title}}</h2>
+		<p>{{post}}</p>
+	</div>
+{{/each}}

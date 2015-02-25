@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
 
 PostSchema = new Schema({  
     title: { type: String, required: true },
-    post: { type: String, required: true },
+    post: { type: String, required: false },
     type: { type: String, required: true },
     modified: { type: Date, default: Date.now }
 });
