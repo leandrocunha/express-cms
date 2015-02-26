@@ -34,7 +34,14 @@ router.get('/post/:id', function(req, res, next) {
 		if(err){
 			res.send(err);
 		}else{
-			res.render('post', {title: 'Express CMS', page: post});
+
+			Post.find({ type: 'page' }, function (err, posts) {
+				if(err){
+					res.send(err);
+				}else{
+					res.render('post', {title: 'Express CMS', pages: posts, page: post});
+				}
+			});			
 		}
 
 	});

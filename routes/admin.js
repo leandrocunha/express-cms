@@ -33,9 +33,11 @@ router.post('/pages', function(req, res, next){
 
 	if( data.name !== '' && data.body !== '' ){
 
+		console.log(data);
+
 		post = new Post({
 			title: data.name,
-			body: data.body,
+			post: data.body,
 			type: 'page'
 		});
 
